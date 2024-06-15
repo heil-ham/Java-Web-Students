@@ -36,9 +36,9 @@
 
                 Integer sizedep1 = Dep1Students.stream().filter(student -> student.getMark() >= 60).toList().size();
 
-                Double Dep1Pass = (double) Dep1Students.stream().filter(student -> student.getMark() >= 60).toList().size()/Dep1Students.size();
-                Double Dep2Pass = (double) Dep2Students.stream().filter(student -> student.getMark() >= 60).toList().size()/Dep2Students.size();
-                Double Dep3Pass = (double) Dep3Students.stream().filter(student -> student.getMark() >= 60).toList().size()/Dep3Students.size();
+                Float Dep1Pass = (float) Dep1Students.stream().filter(student -> student.getMark() >= 60).toList().size()/Dep1Students.size()*100;
+                Float Dep2Pass = (float) Dep2Students.stream().filter(student -> student.getMark() >= 60).toList().size()/Dep2Students.size()*100;
+                Float Dep3Pass = (float) Dep3Students.stream().filter(student -> student.getMark() >= 60).toList().size()/Dep3Students.size()*100;
         %>
         <p>Hallo <%= username %>!</p>
         <table>
